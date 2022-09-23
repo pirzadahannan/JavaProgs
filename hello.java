@@ -1,7 +1,28 @@
+import java.util.*;
+
 class hello
 {
-public static void main(String ar[])
+static int count;
+
+public hello()
 {
-System.out.println("Welcome to java");
+count++;
+}
+public int getcount()
+{
+	return count;
+}
+static{
+	count=0;
+}
+
+
+public static void main (String ar[])
+{
+hello s1=new hello();
+hello s2=new hello();
+hello s3=new hello();
+
+System.out.println(+hello.count);
 }
 }
